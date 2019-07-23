@@ -10,107 +10,116 @@
         content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Karpe - Experiências</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/icon.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav-bar">
-            <div><a><img src="images/logo.png" class="logo" /></a></div>
-            <ul>
-                <li>
-                    <i class="fas fa-question"> </i>
-                    <a href="#">Saiba mais</a>
-                </li>
-                <li>
-                    <i class="fas fa-user icon-ball"> </i>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header class="header">
+            <nav class="nav-bar">
+                <div><a><img src="images/logo.png" class="logo" /></a></div>
+                <ul>
+                    <li>
+                        <i class="fas fa-question"> </i>
+                        <a href="#">Saiba mais</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-user icon-ball"> </i>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <div className="slider">
-        <!-- Swiper -->
-       <div class="swiper-container">
-           <h3 text>Pra você:</h3>
-           <div class="swiper-wrapper">
-           <div class="swiper-slide">
-               <div class="exp">
-                <img src="images/img1.jpg">
-                <p >Viagens</p>
-                <p>Destino dos sonhos</p>
-               </div>
+        <div class="slider">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <h3 text>Pra você:</h3>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="exp">
+                            <img src="images/img1.jpg" class="slide-img">
+                            <div class="slide-desc">
+                                <p>Viagens</p>
+                                <p>Destino dos sonhos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="exp">
+                            <img src="images/img2.jpg" class="slide-img">
+                            <div class="slide-desc">
+                                <p>Esportes</p>
+                                <p>Onde está Wally?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="exp">
+                            <img src="images/img3.jpg" class="slide-img">
+                            <div class="slide-desc">
+                                <p>Comidas e Bebidas</p>
+                                <p>Rodízio de carne com os amigos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="exp">
+                            <img src="images/img4.jpg" class="slide-img">
+                            <div class="slide-desc">
+                                <p>Beleza</p>
+                                <p>Um dia no Spa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">Slide 10</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-           <div class="swiper-slide">
-                <div class="exp">
-                        <img src="images/img2.jpg">
-                        <p >Esportes</p>
-                        <p>Onde está Wally?</p>
-                       </div>
-           </div>
-           <div class="swiper-slide">
-                <div class="exp">
-                        <img src="images/img3.jpg">
-                        <p >Comidas e Bebidas</p>
-                        <p>Rodízio de carne com os amigos</p>
-                       </div>
-           </div>
-           <div class="swiper-slide">
-                <div class="exp">
-                        <img src="images/img4.jpg">
-                        <p >Beleza</p>
-                        <p>Um dia no Spa</p>
-                       </div>
-           </div>
-           <div class="swiper-slide">Slide 5</div>
-           <div class="swiper-slide">Slide 6</div>
-           <div class="swiper-slide">Slide 7</div>
-           <div class="swiper-slide">Slide 8</div>
-           <div class="swiper-slide">Slide 9</div>
-           <div class="swiper-slide">Slide 10</div>
-           </div>
-           <!-- Add Pagination -->
-           <div class="swiper-pagination"></div>
-       </div>
-
-    <div id="interesses">
-        <h3>Perto de você:</h3>
-        <div class="galeria">
-            <ul>
-                <li class="item-galeria">
-                    <img src="images/1.jpg">
-                    <p>Curso de fotografia</p>
-                </li>
-                <li class="item-galeria">
-                    <img src="images/2.jpg">
-                    <p>Curso de fotografia</p>
-                </li>
-                <li class="item-galeria">
-                    <img src="images/3.jpg">
-                    <p>Curso de fotografia</p>
-                </li>
-                <li class="item-galeria">
-                    <img src="images/2.jpg">
-                    <p>Curso de fotografia</p>
-                </li>
-                <li class="item-galeria">
-                    <img src="images/3.jpg">
-                    <p>Curso de fotografia</p>
-                </li>
-                <li class="item-galeria">
+        </div>
+        <div id="interesses">
+            <h3>Perto de você:</h3>
+            <div class="galeria">
+                <ul>
+                    <li class="item-galeria">
                         <img src="images/1.jpg">
                         <p>Curso de fotografia</p>
-                </li>
+                    </li>
+                    <li class="item-galeria">
+                        <img src="images/2.jpg">
+                        <p>Curso de fotografia</p>
+                    </li>
+                    <li class="item-galeria">
+                        <img src="images/3.jpg">
+                        <p>Curso de fotografia</p>
+                    </li>
+                    <li class="item-galeria">
+                        <img src="images/2.jpg">
+                        <p>Curso de fotografia</p>
+                    </li>
+                    <li class="item-galeria">
+                        <img src="images/3.jpg">
+                        <p>Curso de fotografia</p>
+                    </li>
+                    <li class="item-galeria">
+                        <img src="images/1.jpg">
+                        <p>Curso de fotografia</p>
+                    </li>
 
-            </ul>
+                </ul>
+            </div>
         </div>
+        <footer class="footer">
+            <p>@copy 2019 - Desenvolvido por Kaper</p>
+        </footer>
     </div>
-    <footer class="footer">
-        <p>@copy 2019 - Desenvolvido por Kaper</p>
-    </footer>
-
     <script src="js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
@@ -119,8 +128,8 @@
             slidesPerView: 3,
             spaceBetween: 30,
             pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
+                el: '.swiper-pagination',
+                clickable: true,
             },
         });
     </script>
