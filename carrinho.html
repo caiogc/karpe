@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="favicon" href="images/favicon.png">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Karpe - Experiências</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav-bar">
+                <div><a href="./"><img src="images/logo-branca.png" class="logo" /></a></div>
+                <ul>
+                    <li>
+                        <i class="fas fa-question"> </i>
+                        <a href="#">Saiba mais</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-user icon-ball"> </i>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="carrinho secao">
+            <div class="cesta-prod">
+                <div class="cesta-bloco">
+                    <div class="cesta-banner">
+                        <img src="./images/img1.jpg" />
+                        <div class="cesta-tit">
+                            <p>Passeio de barco<br> ao entardecer</p>
+                        </div>
+                    </div>
+                    <div class="cesta-info">
+                        <p><i class="far fa-calendar-check"></i>29/07/2019</p>
+                        <p><i class="far fa-clock"></i> 13:00hs</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Cabo Frio</p>
+                    </div>
+                </div>
+
+                <div class="cesta-bloco">
+                    <div class="cesta-preco">
+                        <p><i class="fas fa-tag"> </i><strong>$250,00</strong></p>
+                    </div>
+                    <div class="cesta-saldo">
+                        <p>Seu saldo é: <br><strong>$200,00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="cesta-desc">
+                <h3>Pague com cartão Méliuz e receba 0,8% de cashback</h3>
+                <p>Notamos que o seu saldo é insuficiente! <br>Para ter mais cashback continue comprando, ative a extensão
+                    em seu navegador e use o cartão de crédito Méliuz.
+                </p>
+                <p> Caso queira essa experiência agora insira abaixo os dados do seu cartão e complete o valor do
+                    pagamento.
+                </p>
+            </div>
+            <div class="cesta-cartao">
+                <h3>DADOS DO CARTÃO</h3>
+                <input type="text" required placeholder="Nome do titular">
+                <input type="text" required placeholder="CPF">
+                <input type="text" required placeholder="Número do cartão">
+                <div class="input-line">
+                    <input type="date" required placeholder="Vencimento">
+                    <input type="text" required placeholder="CVC">
+                </div>
+                <button type="submit" onclick="buscaPagina(carrinho)">Pagar R$50,00</button>
+            </div>
+        </div>
+        <footer class="footer">
+            <span>@copy 2019 - Desenvolvido por Kaper</span>
+        </footer>
+    </div>
+    <script src="js/swiper.min.js"></script>
+
+    <!--Initialize Swiper-->
+    <script>
+        let swiper = new Swiper('.swiper-container', {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

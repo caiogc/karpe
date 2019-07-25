@@ -1,7 +1,5 @@
 /* latin-ext */
 
-/* latin-ext */
-
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -29,16 +27,60 @@ body {
     overflow-x: hidden;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.secao {
+    padding: 5vw 5vw 5vw 5vw;
+    min-height: 100vh;
+}
+
+header {
+    width: 100vw;
+    height: 60px;
+    background: #E25171;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background-color: #E25171;
+    color: #FFFFFF;
+    width: 100vw;
+    bottom: 0;
+    position: relative;
+}
+
+button {
+    background-color: #00A6FF;
+    color: #ffffff;
+    border-radius: 5PX;
+}
+
 p {
     font-size: 16px;
-    line-height: 35px;
+    line-height: 16px;
+    color: #8190A5;
+}
+
+i {
+    color: #111111;
+}
+
+h3, h4, h5 {
+    color: #47525E;
 }
 
 input {
     padding: 14px;
     font-size: 16px;
     color: #333333;
-    margin: 10px;
+    margin: 5px 10px 5px 10px;
 }
 
 button {
@@ -55,20 +97,6 @@ li {
 a {
     color: #333333;
     text-decoration: none;
-}
-
-.container {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
-}
-
-header {
-    width: 100vw;
-    height: 60px;
-    border-bottom: solid 1px;
-    border-color: #DDDDDD;
 }
 
 .interesses {
@@ -91,7 +119,8 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 100px;
+    height: auto;
 }
 
 /*Login*/
@@ -111,7 +140,7 @@ header {
     align-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #FF3859;
+    background-color: #E25171;
     width: 40vw;
     text-align: center;
 }
@@ -137,7 +166,7 @@ header {
 }
 
 .form-login>img {
-    width: 20vw;
+    width: 15vw;
 }
 
 /*ícones*/
@@ -181,13 +210,19 @@ header {
     width: 15vw;
     height: 15vw;
     margin: 5px;
-    background-color: #333333;
+    background-color: #E5E9F2;
+    position: relative;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.item-galeria>p {
+    position: absolute;
 }
 
 .item-galeria>img {
     width: 100%;
-    height: 100%;
-    border-radius: 5px
+    height: 80%;
+    border-radius: 5px 5px 0 0;
 }
 
 .icon-ball {
@@ -197,38 +232,23 @@ header {
     padding: 10px;
 }
 
-/*Rodapé*/
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50px;
-    background-color: #FF3859;
-    color: #FFFFFF;
-    width: 100vw;
-}
-
 /*Navegação horizontal com swiper*/
 
 .slider {
     font-size: 14px;
     color: #000;
-    margin: 0;
-    padding: 0;
-    background-image: url("../images/slider-background.jpg");
     background-position: top;
     background-size: cover;
-    box-shadow: rgba(29, 29, 29, 0.8);
-    background-color:rgba(29, 29, 29, 0.8);
+    background-image: url("../images/slider-background.jpg");
     height: auto;
 }
 
 .swiper-container {
     color: #FFFFFF;
     width: 100vw;
-    height: auto;
-    margin: 0 0 20px 0;
+    height: 100%;
+    padding: 0 0 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .swiper-slide {
@@ -238,7 +258,7 @@ header {
     text-align: center;
     font-size: 18px;
     height: 250px;
-    background: #FF3859;
+    background: #E25171;
     /*Center slide text vertically ;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -272,11 +292,16 @@ div.swiper-slide.swiper-slide-next {
     height: 30%;
 }
 
+.slide-desc>p>a {
+    color: #FFFFFF;
+}
+
 .slide-desc>p {
     line-height: 14px;
     font-size: 14px;
     margin: 0;
     padding: 0;
+    color: #FFFFFF;
 }
 
 .swiper-button-next {
@@ -287,6 +312,140 @@ div.swiper-slide.swiper-slide-next {
 
 .swiper-button-prev {
     background-image: url("../images/prev.png")
+}
+
+.compra-banner {
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    background-position: top;
+    background-size: cover;
+}
+
+.compra-banner>img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.compra-tit {
+    width: 100vw;
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    text-justify: center;
+    align-items: center;
+    color: #ffffff;
+    bottom: 0;
+    position: absolute;
+}
+
+.compra-desc {
+    padding: 3vw 5vw 3vw 5vw;
+    line-height: 16px;
+}
+
+.compra-preco {
+    margin: 0 20px 0 0;
+    background-color: #77D353;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.compra-desc>button {
+    width: 30%;
+}
+
+.cesta-bloco {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-start;
+    margin:10px 0 10px 0;
+}
+
+.cesta-banner {
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    background-position: top;
+    background-size: cover;
+}
+
+.cesta-banner>img {
+    display: flex;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+}
+
+.cesta-prod {
+    display: flex;
+    flex-direction: column;
+}
+
+.cesta-tit {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 30%;
+    align-items: flex-end;
+    background-color: #E25171;
+    color: #ffffff;
+    bottom: 0;
+    position: absolute;
+}
+
+.cesta-info{
+    width: 60vw;
+    padding-left: 5vw;
+}
+
+.cesta-cartao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.cesta-cartao>button{
+    padding: 15px;
+    margin-top:10px;
+    align-self: flex-end;
+    width: 50%;
+    background-color: #77D353;
+}
+
+.input-line{
+    display: flex;
+    width: 100%; 
+    justify-items: center;
+}
+
+.input-line>input{
+    max-width: 30vw;
+}
+
+.cesta-desc {
+    padding: 3vw 5vw 3vw 5vw;
+    line-height: 16px;
+}
+
+.cesta-preco {
+    border: solid 1px;
+    border-color: #343F4B;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.cesta-desc>button {
+    width: 30%;
+}
+
+.star>i {
+    color: #FFDD11;
 }
 
 /*Mobile*/
@@ -330,3 +489,11 @@ div.swiper-slide.swiper-slide-next {
         width: 30vw;
         height: 30vw;
     }
+    .compra-desc>button {
+        width: 100%;
+    }
+    .secao>.galeria>.item-galeria {
+        width: 40vw;
+        height: 40vw;
+    }
+}
