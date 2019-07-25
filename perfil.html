@@ -30,6 +30,16 @@
             </nav>
         </header>
 
+        <div className="userperfil">
+                <div><img src="images/foto-perfil.jpg" class="foto-perfil">   </div>
+            <div className="user">
+                <span></span>
+                <div><h2>NOME E SOBRENOME COMPLETO</h2></div>                
+                <div><h3>EMAIL/TELEFONE</h3></div>
+                <div><h4>Endereço completo com numero aposfaad krejke qehfehfwiuehfw 3878 qw 122</h4></div>
+            </div>
+        </div>
+
         <div id="interesses" class="secao">
             <h3>SEUS INTERESSES</h3>
             <div class="galeria">
@@ -49,41 +59,15 @@
                     <img src="images/1.jpg">
                     <h4>Comer e beber</h4>
                 </div>
-                <div class="item-galeria">
-                    <img src="images/2.jpg">
-                    <h4>Fotografia</h4>
-                </div>
-                <div class="item-galeria">
-                    <img src="images/3.jpg">
-                    <h4>Eventos</h4>
-                </div>
-            </div>
-            <button type="button" onclick="buscaPagina('index')">Ver Experiência</button>
-        </div>
+            </div>            
+        </div>           
+        
+        <button type="button"onclick="buscaPagina('index')">Editar meu perfil</button>    
+        
         <footer>
             <span>@copy 2019 - Desenvolvido por Kaper</span>
         </footer>
     </div>
-    <script src="js/swiper.min.js"></script>
-
-    <!--Initialize Swiper-->
-    <script>
-        let swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 10,
-            slidesPerGroup: 2,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
 
 </body>
 

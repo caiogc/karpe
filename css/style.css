@@ -35,13 +35,13 @@ body {
 
 .secao {
     padding: 5vw 5vw 5vw 5vw;
-    min-height: 100vh;
+    min-height: 40vh;
 }
 
 header {
     width: 100vw;
     height: 60px;
-    background: #E25171;
+    background: #E25171;    
 }
 
 footer {
@@ -102,7 +102,7 @@ a {
 .interesses {
     display: flex;
     background-color: #DDCCFF;
-    height: 50vh;
+    height: 40vh;
 }
 
 .nav-bar {
@@ -496,4 +496,45 @@ div.swiper-slide.swiper-slide-next {
         width: 40vw;
         height: 40vw;
     }
+}
+/*MENU SANDWICH*/
+.nav-toggle {
+    display: block;
+    padding: 10px 10px 15px 10px;
+    background: #e25171;
+    top: 0px;
+    right: 5px;
+    z-index: 50;
+    }
+.hamburger {
+    width: 1.08em;
+    display: inline-block;
+    height: 0.6em;
+    font-size: 1.2em;
+    background: #ff3859;
+    }
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 6px;
+    margin-bottom: 3px;
+    background: #ffffff;
+    border-radius: 3px;
+    }
+/*PERFIL*/
+.userperfil{
+    min-height: 50vh; 
+
+}
+.user{
+    padding: 10cm;
+
+}
+.foto-perfil{
+    height: 30vw;
+    float: left;
+
+}
+.button-perfil{
+    
 }
