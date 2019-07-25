@@ -511,7 +511,7 @@ div.swiper-slide.swiper-slide-next {
     display: inline-block;
     height: 0.6em;
     font-size: 1.2em;
-    background: #ff3859;
+    background: #e25171;
     }
 .hamburger span {
     display: block;
@@ -527,14 +527,11 @@ div.swiper-slide.swiper-slide-next {
 
 }
 .user{
-    padding: 10cm;
+    
 
 }
 .foto-perfil{
     height: 30vw;
     float: left;
 
-}
-.button-perfil{
-    
 }
