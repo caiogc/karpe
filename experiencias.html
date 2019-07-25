@@ -1,87 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="utf-8">
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="css/swiper.min.css">
-
-  <!-- Demo styles -->
-  <style>
-    html, body {
-      position: relative;
-      height: 100%;
-    }
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  </style>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="favicon" href="images/favicon.png">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Karpe - Experiências</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/icon.css">
 </head>
-<body>
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
 
-  <!-- Swiper JS -->
+<body>
+  <div class="karpe-container">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+      <img src="images/logo-branca.png" class="img-fluid logo-branca" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <div class="row">
+            <div class="col-5 col-md-5">
+              <img class=" img-fluig img-thumbnail" src="images/boneco.jpg">
+            </div>
+            <div class="col-7 col-md-7">
+              <p>Ana Carolina</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="secao">
+      <h3>Próximos a você:</h3>
+      <div class="galeria">
+        <div class="item-galeria">
+          <input id="1" type="checkbox" class="css-checkbox">
+          <label for="1" class="css-label"><img src="images/1.jpg" class="galeria-img"></label>
+          <p>Lorem Ipsum</p>
+        </div>
+        <div class="item-galeria">
+          <input id="2" type="checkbox" class="css-checkbox">
+          <label for="2" class="css-label"><img src="images/2.jpg" class="galeria-img"></label>
+          <p>Lorem Ipsum</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span>@copy 2019 - Desenvolvido por Kaper</span>
+    </footer>
+  </div>
   <script src="js/swiper.min.js"></script>
 
-  <!-- Initialize Swiper -->
+  <!--Initialize Swiper-->
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    let swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 3,
+      spaceBetween: 10,
+      slidesPerGroup: 2,
       loop: true,
       loopFillGroupWithBlank: true,
       pagination: {
         el: '.swiper-pagination',
-        clickable: true,
+        clickable: false,
       },
       navigation: {
         nextEl: '.swiper-button-next',
@@ -89,5 +79,17 @@
       },
     });
   </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
+
+
 </html>

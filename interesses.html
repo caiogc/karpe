@@ -10,13 +10,15 @@
         content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Karpe - Experiências</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/icon.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="karpe-container">
         <header class="header">
             <nav class="nav-bar">
                 <div><a href="./"><img src="images/logo-branca.png" class="logo" /></a></div>
@@ -26,7 +28,7 @@
                         <span></span>
                         <span></span>
                     </label>
-               </div>
+                </div>
             </nav>
         </header>
 
@@ -34,28 +36,34 @@
             <h3>SEUS INTERESSES</h3>
             <div class="galeria">
                 <div class="item-galeria">
-                    <img src="images/1.jpg">
+                    <input id="1" type="checkbox" class="css-checkbox">
+                    <label for="1" class="css-label"><img src="images/1.jpg"></label>
                     <p>Comer e beber</p>
                 </div>
                 <div class="item-galeria">
-                    <img src="images/2.jpg">
-                    <p>Fotografia<p>
+                    <input id="2" type="checkbox" class="css-checkbox">
+                    <label for="2" class="css-label"><img src="images/2.jpg"></label>
+                    <p>Paisagens<p>
                 </div>
                 <div class="item-galeria">
-                    <img src="images/3.jpg">
+                    <input id="3" type="checkbox" class="css-checkbox">
+                    <label for="3" class="css-label"><img src="images/3.jpg"></label>
+                    <p>Aventura</p>
+                </div>
+                <div class="item-galeria">
+                    <input id="4" type="checkbox" class="css-checkbox">
+                    <label for="4" class="css-label"><img src="images/img6.jpg"></label>
+                    <p>Passeios</p>
+                </div>
+                <div class="item-galeria">
+                    <input id="5" type="checkbox" class="css-checkbox">
+                    <label for="5" class="css-label"><img src="images/7.jpg"></label>
                     <p>Eventos</p>
                 </div>
                 <div class="item-galeria">
-                    <img src="images/1.jpg">
-                    <p>Comer e beber</p>
-                </div>
-                <div class="item-galeria">
-                    <img src="images/2.jpg">
-                    <p>Fotografia<p>
-                </div>
-                <div class="item-galeria">
-                    <img src="images/3.jpg">
-                    <p>Eventos</p>
+                    <input id="6" type="checkbox" class="css-checkbox">
+                    <label for="6" class="css-label"><img src="images/8.jpg"></label>
+                    <p>Esportes<p>
                 </div>
             </div>
             <button type="button" class="btn-grande" onclick="buscaPagina('index')">Ver Experiência</button>
