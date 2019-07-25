@@ -44,6 +44,7 @@ header {
     background: #E25171;
 }
 
+/*
 footer {
     display: flex;
     justify-content: center;
@@ -53,7 +54,7 @@ footer {
     color: #FFFFFF;
     width: 100vw;
     bottom: 0;
-}
+}*/
 
 button {
     background-color: #00A6FF;
@@ -376,6 +377,7 @@ div.swiper-slide.swiper-slide-next {
 .compra-desc {
     padding: 3vw 5vw 3vw 5vw;
     line-height: 16px;
+    min-height: 47vh;
 }
 
 .compra-desc>h1, h2, h3, h4, h5 {
@@ -464,7 +466,8 @@ div.swiper-slide.swiper-slide-next {
 }
 
 .cesta-desc>p {
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 16px;
     text-align: justify;
 }
 
