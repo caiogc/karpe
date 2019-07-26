@@ -8,7 +8,7 @@
     <meta name="favicon" href="images/favicon.png">
     <meta name="viewport"
         content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>Karpe - Experiências</title>
+    <title>Karpe - Perfil</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -30,26 +30,34 @@
             </nav>
         </header>
 
-        <div className="userperfil">
-            <div><img src="images/foto-perfil.jpg" class="foto-perfil"> </div>
-            <div className="user">
+        <div class="userperfil">
+            <div>
+                <img src="images/foto-perfil.jpg" class="foto-perfil">
+            </div>
+            <div class="user">
                 <div class="userlabel">
-                    <label for="navicon" class="vazio">
-                        <span>espaço</span>
-                    </label>
-                    <div>
-                        <h3>NOME E SOBRENOME COMPLETO</h3>
-                    </div>
-                    <div class="userlabel">
-                        <label for="navicon" class="vazio">
-                            <span>espaço</span>
-                        </label>
-                        <div>
-                            <h4>EMAIL/TELEFONE
-                                <p>Endereço completo com bairro, numero e complemento. Tudo em duas linhas</p>
-                            </h4>
-                        </div>
-                    </div>
+                    <span>&nbsp;</span>
+                    <h4>ANA COSTA</h4><br><br><br>
+                </div>
+                <div class="userlabel">
+                    <span>&nbsp;</span><br>
+                    <h4>EMAIL/TELEFONE<br>
+                        ana@karpe.com<br>
+                        (31) 98877-6655
+                    </h4>
+                </div>
+                <div class="userlabel">
+                    <h4>ENDEREÇO<br>
+                        Av. Barão Homem de Melo, 329<br>
+                        Bairro Nova Suiça<br>
+                        Belo Horizonte
+                    </h4>
+                </div>
+
+                <div class="userlabel">
+                    <h4>SALDO DO MÉLIUZ<br>
+                        R$45,00
+                    </h4>
                 </div>
 
                 <div id="interesses-p" class="secao-p">
@@ -57,29 +65,27 @@
                     <h3>SEUS INTERESSES</h3>
                     <div class="galeria-p">
                         <div class="item-galeria-p">
-                            <img src="images/1.jpg">
+                            <img src="images/1.jpg" />
                             <p>Comida e Bebida</p>
                         </div>
                         <div class="item-galeria-p">
-                            <img src="images/2.jpg">
-                            <p>Fotografia<p>
+                            <img src="images/3.jpg" />
+                            <p>Aventura</p>
                         </div>
                         <div class="item-galeria-p">
-                            <img src="images/3.jpg">
-                            <p>Eventos</p>
+                            <img src="images/img6.jpg" />
+                            <p>Passeios</p>
                         </div>
                     </div>
                     <hr>
                     <div class="button-p">
-                        <button type="button" onclick="buscaPagina('index')">Editar meu perfil</button>
+                        <button type="button" onclick="buscaPagina('interesses')">Editar meu perfil</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <script src="js/script.js"></script>
 </body>
-
-<script src="js/script.js"></script>
 
 </html>
