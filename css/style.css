@@ -534,6 +534,10 @@ div.swiper-slide.swiper-slide-next {
     color: #FFDD11;
 }
 
+.btn-primary{
+    background-color: #00A6FF;
+}
+
 /*MENU SANDWICH*/
 
 .nav-toggle {
